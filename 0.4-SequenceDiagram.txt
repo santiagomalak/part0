@@ -3,9 +3,9 @@ sequenceDiagram
     participant Browser
     participant Server
 
-    User->>Browser: Escribe nota y hace clic en "Guardar"
-    Browser->>Server: POST /notes (con datos de la nueva nota)
+    User->>Browser: Writes note and clicks "Save"
+    Browser->>Server: POST /notes (with new note data)
     activate Server
-    Server->>Browser: 201 Created (o similar)
+    Server->>Browser: 201 Created (or similar)
     deactivate Server
-    Browser->>User: Muestra la nueva nota en la lista
+    Browser->>User: Displays the new note in the list

@@ -4,4 +4,4 @@ stateDiagram
     InitialState --> FetchData
     FetchData --> RenderUI
     RenderUI --> UserInteraction
-    UserInteraction --> FetchData: (e.g., crear nueva nota)
+    UserInteraction --> FetchData: (e.g., create new note)

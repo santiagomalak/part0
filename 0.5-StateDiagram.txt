@@ -1,0 +1,7 @@
+stateDiagram
+    direction TB
+    [*] --> InitialState
+    InitialState --> FetchData
+    FetchData --> RenderUI
+    RenderUI --> UserInteraction
+    UserInteraction --> FetchData: (e.g., crear nueva nota)
